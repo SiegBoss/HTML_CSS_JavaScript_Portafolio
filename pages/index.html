@@ -1,0 +1,294 @@
+<!--Portafolio-->
+<!DOCTYPE html>
+<html>
+  <!--Encabezado de la pagina | Page header -->
+  <head>
+    <!--Metadatos | Metadata-->
+    <meta charset="utf-8">
+    <meta name="author" content="SiegBoss">
+    <meta name="description" content="Portafolio de SiegBoss">
+    <meta name="keywords" content="SiegBoss, HTML, CSS, JavaScript, Programación, Programador, Websites, Sitios Web, Website, Mecatronico, Ingeniero,">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Titulo | Title-->
+    <title>SiegBoss | Portafolio</title>
+    <!--Icono | Icon-->
+    <link rel="icon" type="image/x-icon" href="../images/icono.png">
+    <!-- Enlazar a Bootstrap | Link to Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Enlazar a CSS | Link to CSS -->
+    <link rel="stylesheet" href="../style/style.css">
+    <!--Tipografias | Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+  </head>
+
+  <body> 
+    <!--Barra de navegación | Navigation bar-->
+    <nav class="navbar navbar-expand-md bg-body-tertiary">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+          <img class="navbar-brand" src="../images/black_icon.png" alt="Icono de la Pagina Web" width="50">
+          <ul class="navbar-nav d-flex justify-content-center align-items-center">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#Sobre-mi">Sobre Mí</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"  href="#Proyectos">Proyectos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Contacto">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--Seccion Hero-->
+    <section class="hero align-items-stretch">
+      <div class="hero-main d-flex flex-column justify-content-center align-items-center">
+        <img class="hero-image-developer"  src="../images/logo_willy.png" alt="Foto de William">
+        <h1>Hola, Soy William</h1>
+        <h2>Soy Ingeniero Mecatrónico Jr y Programador Jr</h2>
+        <div class="hero-lower">
+          <img class="hero-lower-image img-fluid" src="..//images/hero_main.svg" alt="Monitor y Laptop">
+        </div>
+      </div>
+    </section>
+    <!--Seccion Sobre Mi-->
+    <section id="Sobre-mi"  class="about-me dark-section">
+      <div class="container">
+        <h2 class="section-title white-text">Hacerca de Mí</h2>
+        <p class="text-section">Ingeniero mecatrónico recién egresado con una pasión por la programación. 
+          Siempre he estado interesado en cómo funcionan las cosas, y la ingeniería mecatrónica me ofrece la oportunidad de combinar mi 
+          curiosidad por la ciencia y la tecnología con mi deseo de crear soluciones innovadoras.</p>
+      </div>
+    </section>
+    <!--Seccion experience-->
+    <section class="experience seccion-clara">
+      <div class="container text-center">
+        <div class="row">
+         <!--Lenguajes de Programacion-->
+          <div class="column col-12 col-md-4">
+            <i class="bi bi-laptop"></i>
+            <p class="experience-title">Lenguajes de Programación</p>
+            <div class="badge-container">
+              <span class="badge text-bg-primary">Python</span>
+              <span class="badge text-bg-primary">Java</span>
+              <span class="badge text-bg-primary">C</span>
+              <span class="badge text-bg-primary">JavaScript</span>
+              <span class="badge text-bg-primary">SQL</span>
+            </div>
+          </div>
+          <!--Tecnologias Web-->
+          <div class="column col-12 col-md-4">
+            <i class="bi bi-browser-chrome"></i>
+            <p class="experience-title">Tecnologias Web</p>
+            <div class="badge-container">
+              <span class="badge text-bg-primary">HTMl</span>
+              <span class="badge text-bg-primary">CSS</span>
+              <span class="badge text-bg-primary">React</span>
+              <span class="badge text-bg-primary">Bootstrap</span>
+              <span class="badge text-bg-primary">Node Js</span>
+            </div>
+          </div>
+          <!--Ingenieria Mecatronica-->
+          <div class="column col-12 col-md-4">
+            <i class="bi bi-robot"></i>
+            <p class="experience-title">Mecatrónica</p>
+            <div class="badge-container">
+              <span class="badge text-bg-primary">SolidWorks</span>
+              <span class="badge text-bg-primary">LabView</span>
+              <span class="badge text-bg-primary">PLC</span>
+              <span class="badge text-bg-primary">HMI</span>
+              <span class="badge text-bg-primary">CNC</span>
+              <span class="badge text-bg-primary">Microcontroladoreas</span>
+              <span class="badge text-bg-primary">Hidráulica</span>
+              <span class="badge text-bg-primary">Neumática</span>
+              <span class="badge text-bg-primary">Robótica</span>
+              <span class="badge text-bg-primary">Mantenimiento</span>
+              <span class="badge text-bg-primary">Interfaces y Redes Industriales</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> 
+    <!--Seccion Proyectos-->
+    <section id="Proyectos" class=" recent-projects clear-section d-flex flex-column">
+      <h2 class="section-title">Mis Proyectos</h2>
+      <h3 class="section-description"">Estos son algunos de los proyectos que e creado</h3>
+      <!--Galeria Proyectos-->
+      <div class="container text-center container-projects">
+        <div class="row">
+          <!--Proyecto 1-->
+          <div class=" col-12 col-md-6 col-lg-4">
+            <div class= "projects">
+              <img src="../images/HTML_CSS_JavaScript_Calculator.png" alt="Proyecto 1">
+              <div class="overlay">
+                <p>Calculadora</p>
+                <div class="container-icons">
+                  <a href="https://github.com/SiegBoss/HTML_CSS_JavaScript_Calculator" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a href="https://siegboss.github.io/HTML_CSS_JavaScript_Calculator/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-laptop"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Proyecto 2-->
+          <div class=" col-12 col-md-6 col-lg-4">
+            <div class= "projects">
+              <img src="../images/HTML_CSS_JavaScript_Card_Game.png" alt="Proyecto 2">
+              <div class="overlay">
+                <p>Memorama</p>
+                <div class="container-icons">
+                  <a href="https://github.com/SiegBoss/HTML_CSS_JavaScript_Card_Game" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a href="https://siegboss.github.io/HTML_CSS_JavaScript_Card_Game/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-laptop"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <!--Proyecto 3-->
+          <div class=" col-12 col-md-6 col-lg-4">
+            <div  class= "projects">
+              <img src="../images/HTML_CSS_JavaScript_Caesar_Cipher.png" alt="proyecto 1">
+              <div class="overlay">
+                <p>Cifrado César</p>
+                <div class="container-icons">
+                  <a href="https://github.com/SiegBoss/HTML_CSS_JavaScript_Caesar_Cipher" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a href="https://siegboss.github.io/HTML_CSS_JavaScript_Caesar_Cipher/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-laptop"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <!--Proyecto 4-->
+          <div class=" col-12 col-md-6 col-lg-4">
+            <div  class= "projects">
+              <img src="../images/proyecto1.png" alt="proyecto 1">
+              <div class="overlay">
+                <p>Proyecto 1</p>
+                <div class="container-icons">
+                  <a href="https://github.com/SiegBoss/Python_Calculator" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a href="" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-laptop"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <!--Proyecto 4-->
+          <div class=" col-12 col-md-6 col-lg-4">
+            <div  class= "projects">
+              <img src="../images/proyecto1.png" alt="proyecto 1">
+              <div class="overlay">
+                <p>Proyecto 1</p>
+                <div class="container-icons">
+                  <a href="" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a href="" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-laptop"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <!--Proyecto 6-->
+          <div class=" col-12 col-md-6 col-lg-4">
+            <div  class= "projects">
+              <img src="../images/proyecto1.png" alt="proyecto 1">
+              <div class="overlay">
+                <p>Proyecto 1</p>
+                <div class="container-icons">
+                  <a href="" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a href="" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-laptop"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <a href="https://github.com/SiegBoss?tab=repositories" target="_blank" rel="noopener noreferrer">
+          <button type="button" class="btn btn-info">Ver mas Proyectos
+            <i class="bi bi-arrow-right-circle-fill"></i>
+          </button>
+        </a>
+      </div>
+    </section>
+    <!--Seccion Contacto-->
+    <section id="Contacto" class="contact dark-section">
+      <div class="container">
+        <div class="container text-center d-flex rectangle justify-content-evenly">
+          <div class="row">
+            <div class="col-12 col-md-4 section-title">
+              Hablemos
+            </div>
+            <div class="col-12 col-md-4 description">
+              ¡Hola! Gracias por visitar mi portafolio. 
+              Si te gustó mi trabajo y crees que puedo ser el candidato ideal para tu proyecto, 
+              no dudes en contactarme.
+            </div>
+            <div class="col-12 col-md-4">
+              <a href="reyesawf@gmail.com">
+                <button type="button">
+                  Enviar Correo
+                  <i class="bi bi-envelope-check-fill"></i>
+                </button>
+              </a>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!--Pie de Pagina-->
+    <footer class="dark-section d-flex flex-column align-items-center justify-content-center" >
+      <img class="footer-icon" src="../images/white_icon.svg" alt="Logo de la Pagina">
+      <p class="footer-text text-center" >Tu versión de mañana debería poder vencer a tú versión de hoy</p>
+      <div class="social-media-icons d-flex flex-wrap align-items-center justify-content-center" >
+        <a href="https://twitter.com/SiegBoss" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-twitter-x"></i>
+        </a>
+        <a href="https://github.com/SiegBoss" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-github"></i>
+        </a>
+        <a href="https://www.instagram.com/siegboss_xp/" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-instagram"></i>
+        </a>
+        <a href="https://www.tiktok.com/@siegboss" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-tiktok"></i>
+        </a>
+      </div>
+      <div class="Copyright">
+        creado por SiegBoss &#169; 2023
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
