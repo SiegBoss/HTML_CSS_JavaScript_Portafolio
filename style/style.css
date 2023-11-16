@@ -35,7 +35,7 @@ h1{
 /*Barra de navegacion*/
 .navbar {
   padding: 2rem;
-  background-color: #f5f6f7;
+  background-color: white;
 }
 
 .navbar-collapse {
@@ -46,7 +46,7 @@ h1{
 /*-----------------------*/
 /*Seccion hero*/
 .hero{
-  background-color: #f5f6f7;
+  background-color: white;
   min-height: 450px;
   text-align: center;
 }
