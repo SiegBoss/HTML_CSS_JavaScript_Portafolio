@@ -11,6 +11,12 @@ h1{
   font-family: 'Rubik Dirt', cursive;
 }
 
+/*Estilos de texto*/
+.section-title{
+  font-size: 2rem;
+  padding: 10px 0;
+  font-family: 'Rubik Dirt', cursive;
+}
 
 /*Seccion oscura*/
 .dark-section{
@@ -25,6 +31,7 @@ h1{
 }
 
 
+/*-----------------------*/
 /*Barra de navegacion*/
 .navbar {
   padding: 2rem;
@@ -36,16 +43,12 @@ h1{
   justify-content: space-between;
 }
 
-
+/*-----------------------*/
 /*Seccion hero*/
 .hero{
   background-color: #f5f6f7;
   min-height: 450px;
   text-align: center;
-}
-
-.hero-lower{
-  margin-top: 30px;
 }
 
 .hero-image-developer{
@@ -55,12 +58,20 @@ h1{
   margin: 20px;
 }
 
+.hero-lower{
+  margin-top: 30px;
+}
 
+/*-----------------------*/
 /*Sobre mi*/
-.section-title{
-  font-size: 2rem;
-  padding: 15px 0;
-  font-family: 'Rubik Dirt', cursive;
+.about-me{
+  height: 500px;
+  padding: 10px;
+}
+
+.about-me .container{
+  max-width: 800px;
+  text-align: center;
 }
 
 .white-text{
@@ -68,28 +79,17 @@ h1{
 }
 
 .text-section{
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
-.about-me{
-  height: 500px;
-  padding: 10px;
-}
-
-.about-me .container{
-  max-width: 600px;
-  text-align: center;
-}
-
-
-
+/*-----------------------*/
 /*Experiencia*/
 .experience{
   padding: 40px 40px 40px 40px;
 }
 
 .experience .column{
-  padding: 20px;
+  padding: 15px;
   border: 2px solid #8080804d;
   flex-direction: column; 
   justify-content: space-evenly;
@@ -101,14 +101,22 @@ h1{
   background-color: #1b1b32;
 }
 
-.experience .row div{
-  height: 350px;
+.experience i{
+  font-size: 2rem;
+  color: #7ade30;
+  background-color: #0a0a23;
+  padding: 8px 19px;
+  border-radius: 30%;
 }
 
 .experience-title{
   font-size: 25px;
   font-weight: bold;
   margin: 10px 0;
+}
+
+.experience .row div{
+  height: 350px;
 }
 
 .badge-container{
@@ -123,20 +131,8 @@ h1{
 
 }
 
-.experience i{
-  font-size: 2rem;
-  color: #7ade30;
-  background-color: #0a0a23;
-  padding: 8px 19px;
-  border-radius: 20%;
-}
-
-
-/*Proyectos*/
-.projects{
-  position: relative;
-}
-
+/*-----------------------*/
+/*Proyectos */
 .recent-projects{
   padding: 20px;
 }
@@ -145,14 +141,24 @@ h1{
   width: 100%;
   height: 100%;
   padding: 10px;
-  border-radius: 10px;
+  border-radius: 15px;
   display: block;
   transition: all 0.2s ease;
 }
 
 .container-projects{
-  padding: 60px;
-  margin: 40px;
+  padding: 20px;
+  margin: 20px;
+}
+
+.projects{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.projects:hover img {
+  opacity: 0.2;
 }
 
 .overlay {
@@ -166,21 +172,23 @@ h1{
 }
 
 .overlay p{
-  font-size: 25px;
+  font-size: 20px;
   font-weight: bold;
   margin-bottom: 0;
 }
 
-.overlay .container-icons{
-  display: flex;
-}
-
-.projects:hover img {
-  opacity: 0.2;
+.overlay i {
+  color: #0a0a23;
+  font-size: 60px;
+  margin: 25px
 }
 
 .projects:hover .overlay {
   opacity: 1;
+}
+
+.overlay .container-icons{
+  display: flex;
 }
 
 .btn-info{
@@ -188,12 +196,13 @@ h1{
   margin: 20px;
 }
 
-.overlay i {
-  color: #0a0a23;
-  font-size: 60px;
-  margin: 10px;
+.mecatro{
+  margin-bottom: 100px;
 }
 
+.mecatro i{
+  margin: auto;
+}
 
 /*Contacto*/
 .contact .container{
@@ -326,5 +335,4 @@ footer{
     font-size: 40px;
   }
 }
-
 
