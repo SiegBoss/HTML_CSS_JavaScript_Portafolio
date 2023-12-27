@@ -65,10 +65,11 @@ footer {
   cursor: pointer;
 }
 
-
 footer {
   min-height: 500px;
 }
+
+
 
 .footer-icon {
   height: 80px;
