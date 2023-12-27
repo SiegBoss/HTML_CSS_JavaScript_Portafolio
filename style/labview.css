@@ -1,5 +1,5 @@
+/*Estilos generales*/
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   background-color: #f4f4f4;
@@ -7,11 +7,18 @@ body {
 
 header {
   background-color: #1b1b32;
-  color: #fff;
+  color: #f4f4f4;
   text-align: center;
   padding: 15px 0;
 }
 
+header h1 {
+  font-size: 2.5rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/*-------------------*/
+/*Galeria de imagenes*/
 .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -33,11 +40,8 @@ header {
   transform: scale(1.05);
 }
 
-footer {
-  background-color: #1b1b32;
-  color: #fff;
-}
-
+/*-------------------*/
+/*MODAL*/
 .modal {
   display: none;
   position: fixed;
@@ -65,11 +69,14 @@ footer {
   cursor: pointer;
 }
 
+
+/*-------------------*/
+/*Pie de pagina*/
 footer {
   min-height: 500px;
+  background-color: #1b1b32;
+  color: #fff;
 }
-
-
 
 .footer-icon {
   height: 80px;
