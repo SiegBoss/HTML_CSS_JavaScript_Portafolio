@@ -359,6 +359,7 @@ footer {
 }
 
 .modal img {
+    height: auto;
     max-width: 90%;
     max-height: 90%;
     border-radius: 8px;
