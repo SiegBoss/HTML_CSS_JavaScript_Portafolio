@@ -13,19 +13,19 @@ header {
 }
 
 header h1 {
-  font-size: 2.5rem;
   font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
 }
 
 /*-------------------*/
 /*Galeria de imagenes*/
 .gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-gap: 20px;
   padding: 20px;
   margin: 0 auto;
   max-width: 1200px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
 
 .gallery img {
@@ -43,17 +43,18 @@ header h1 {
 /*-------------------*/
 /*MODAL*/
 .modal {
-  display: none;
-  position: fixed;
   z-index: 9999;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.9);
   justify-content: center;
   align-items: center;
+  display: none;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.9);
 }
+
 .modal img {
   max-width: 90%;
   max-height: 90%;
@@ -61,14 +62,35 @@ header h1 {
 }
 
 .close-button {
-  position: absolute;
   top: 10px;
   right: 10px;
-  color: #fff;
   font-size: 24px;
+  position: absolute;
   cursor: pointer;
+  color: #fff;
 }
 
+/*-------------------*/
+/* Media queries para dispositivos más pequeños */
+@media only screen and (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+}
 
 /*-------------------*/
 /*Pie de pagina*/
@@ -85,28 +107,28 @@ footer {
 }
 
 .footer-text {
+  font-family: 'Montserrat', sans-serif;
   font-size: 1.5rem;
   padding: 20px;
   margin-bottom: 30px;
-  font-family: 'Quicksand', sans-serif;
 }
 
 .social-media-icons a {
   width: 50px;
   height: 50px;
+  padding: 2px;
+  margin: 10px;
+  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 2px;
-  margin: 10px;
   border: 2px solid white;
-  border-radius: 50%;
   transition: all 0.2s ease-in;
 }
 
 .social-media-icons i {
-  color: white;
   font-size: 1.5rem;
+  color: white;
   transition: all 0.2s ease-in;
 }
 
@@ -121,10 +143,11 @@ footer {
 
 .Copyright {
   font-size: 15px;
-  color: #aeaeae;
   padding: 20px;
+  color: #aeaeae;
 }
 
 .contact button:hover i {
   color: black;
 }
+

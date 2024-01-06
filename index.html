@@ -27,17 +27,45 @@
 
 <body>
 
-    <!--Barra de navegación | Navigation bar-->
-    <nav class="navbar navbar-expand-md bg-body-tertiary">
+    <!-- Barra de navegación | Navigation bar-->
+
+    <!-- navbar : Este es un componente de Bootstrap que crea una barra de navegación en tu sitio web. -->
+    <!-- navbar-expand-md : Esta es una clase de Bootstrap que controla cuándo la barra de navegación debe colapsarse en un botón de hamburguesa.
+                            En este caso, la barra de navegación se colapsará en pantallas de tamaño ‘md’ (mediano) o más pequeñas. -->
+    <nav class="navbar navbar-expand-md">
+
+        <!-- container-fluid : Esta es una clase de Bootstrap que se utiliza para un contenedor de ancho completo que abarca toda la anchura de la pantalla. -->
         <div class="container-fluid">
+
+            <!-- navbar-brand :  Esta es una clase de Bootstrap utilizada para el botón que aparece cuando la barra de navegación se colapsa (generalmente en vistas de pantalla más pequeñas). -->
+            <!-- data-bs-toggle = "collapse" : Este es un atributo de datos de Bootstrap que define el comportamiento de colapso del botón 
+                                               Cuando se hace clic en el botón, el contenido vinculado se expande o colapsa. -->
+            <!-- data-bs-target="#navbarTogglerDemo03" : Este es otro atributo de datos de Bootstrap que se utiliza para vincular el botón con el contenido que debe colapsar. 
+                                                         En este caso, el contenido que se colapsará tiene el ID navbarTogglerDemo03. -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                
+                <!-- navbar-toggler-icon : Este es un componente de Bootstrap que crea un icono de hamburguesa. -->
                 <span class="navbar-toggler-icon"></span>
+
             </button>
+
+            <!-- collapse : Esta es una clase de Bootstrap que se utiliza para crear un contenedor colapsable. -->
+            <!-- navbar-collapse : Esta es una clase de Bootstrap que se utiliza junto con collapse para elementos de la barra de navegación que deben colapsarse en vistas de pantalla más pequeñas.-->
             <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+               
+                <!-- navbar-brand : Esta es una clase de Bootstrap que se utiliza para el logotipo o nombre de la marca en la barra de navegación.-->
                 <img class="navbar-brand" src="images/black_icon.png" alt="Icono de la Pagina Web" width="50">
+                
+                <!-- navbar-nav : Esta es una clase de Bootstrap que se utiliza para crear una lista no ordenada de elementos de la barra de navegación.-->
+                <!-- d-flex : Esta es una clase de Bootstrap que se utiliza para crear un contenedor flexible. -->
+                <!-- justify-content-center : Esta es una clase de Bootstrap que se utiliza para alinear los elementos de la barra de navegación en el centro. -->
+                <!-- align-items-center : Esta es una clase de Bootstrap que se utiliza para alinear verticalmente los elementos de la barra de navegación. -->
                 <ul class="navbar-nav d-flex justify-content-center align-items-center">
+
+                    <!-- nav-item : Esta es una clase de Bootstrap que se utiliza para crear un elemento de la barra de navegación. -->
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#Sobre-mi">Sobre Mí</a>
+                        <!-- nav-link : Esta es una clase de Bootstrap que se utiliza para crear un enlace en la barra de navegación. -->
+                        <a class="nav-link" href="#Sobre-mi">Sobre Mí</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#Mis-habilidades">Mis Habilidades</a>
@@ -54,12 +82,21 @@
     </nav>
 
     <!--Seccion Hero-->
+
+    <!-- align-items-stretch : Esta es una clase de Bootstrap que se utiliza para estirar los elementos de la sección para que se ajusten a la altura de la sección. -->
     <section class="hero align-items-stretch">
+
+        <!-- d-flex : Esta es una clase de Bootstrap que se utiliza para crear un contenedor flexible. -->
+        <!-- flex-column : Esta es una clase de Bootstrap que se utiliza para alinear verticalmente los elementos de la sección. -->
+        <!-- justify-content-center : Esta es una clase de Bootstrap que se utiliza para alinear los elementos de la sección en el centro. -->
+        <!-- align-items-center : Esta es una clase de Bootstrap que se utiliza para alinear verticalmente los elementos de la sección. -->
         <div class="hero-main d-flex flex-column justify-content-center align-items-center">
             <img class="hero-image-developer" src="images/logo_willy.png" alt="Foto de William">
             <h1>Hola, Soy William</h1>
             <h2>Soy Ingeniero Mecatrónico Jr y Programador Jr</h2>
             <div class="hero-lower">
+
+                <!-- img-fluid :  Esta es una clase de Bootstrap que se utiliza para hacer que las imágenes sean responsivas.-->
                 <img class="hero-lower-image img-fluid" src="images/hero_main.svg" alt="Monitor y Laptop">
             </div>
         </div>
@@ -67,14 +104,15 @@
 
     <!--Hacerca de Mi-->
     <section id="Sobre-mi" class="about-me dark-section">
+
+        <!-- container :  Esta es una clase de Bootstrap que se utiliza para un contenedor de ancho fijo que se centra automáticamente en la página. -->
         <div class="container">
             <h2 class="title white-text">HACERCA DE MÍ</h2>
             <p class="text-section">
                 Soy Ingeniero Mecatrónico Jr con habilidades en diseño mecánico, electrónico y 
                 sistemas de control. Mi pasión por la programación me ha llevado estudiar diversos tipos de lenguajes 
-                como Python, Java, JavaScript así como también aprender HTML, CSS y bases de datos en SQL. Estoy abierto a 
-                oportunidades que me permitan aplicar mis conocimientos en ingeniería y programación de manera individual o 
-                combinada. Mi meta es crecer profesionalmente mientras aporto valor a la organización con mis habilidades, 
+                como Python, Java, JavaScript así como también aprender HTML, CSS y bases de datos en SQL. 
+                Mi meta es crecer profesionalmente mientras aporto valor a la organización con mis habilidades, 
                 dedicación y capacidad para trabajar en equipo y adaptarme a nuevas tecnologías.
             </p>
         </div>
@@ -82,36 +120,47 @@
 
     <!--Habilidades-->
     <section id="Mis-habilidades" class="experience clear-section">
-
+        
+        <!-- container :  Esta es una clase de Bootstrap que se utiliza para un contenedor de ancho fijo que se centra automáticamente en la página. -->
+        <!-- text-center : Esta es una clase de Bootstrap que se utiliza para alinear el texto en el centro. -->
         <div class="container text-center">
+
+            <!-- row : Esta es una clase de Bootstrap que se utiliza para crear una fila. -->
             <div class="row">
 
                 <!--Lenguajes de Programacion-->
+
+                <!-- column : Esta es una clase de Bootstrap que se utiliza para crear una columna. -->
+                <!-- col-12 : Esta es una clase de Bootstrap que se utiliza para crear una columna que ocupa 12 espacios en una fila. -->
+                <!-- col-md-4 : Esta es una clase de Bootstrap que se utiliza para crear una columna que ocupa 4 espacios en una fila en pantallas medianas. -->
                 <div class="column col-12 col-md-4">
+
+                    <!-- bi bi-laptop : Este es un componente de Bootstrap que crea un icono de laptop. -->
                     <i class="bi bi-laptop"></i>
                     <p class="experience-title">Lenguajes de Programación</p>
                     <div class="badge-container">
+
+                        <!-- badge : Esta es una clase de Bootstrap que se utiliza para crear una insignia. -->
+                        <!-- text-bg-primary : Esta es una clase de Bootstrap que se utiliza para crear un texto con un fondo de color primario. -->
                         <span class="badge text-bg-primary">Python</span>
                         <span class="badge text-bg-primary">Java</span>
                         <span class="badge text-bg-primary">C</span>
                         <span class="badge text-bg-primary">JavaScript</span>
-
-                        <p class="experience-title">Gestión de Bases de Datos</p>
-                        <span class="badge text-bg-primary">SQLite</span>
-                        <span class="badge text-bg-primary">MySQL Workbench</span>
-                        <span class="badge text-bg-primary">MongoDB</span>
                     </div>
                 </div>
 
-                <!--Tecnologias Web-->
+                <!--Desarrollo Web-->
                 <div class="column col-12 col-md-4">
                     <i class="bi bi-browser-chrome"></i>
-                    <p class="experience-title">Desarrollo Web</p>
+                    <p class="experience-title">Desarrollo Web y Bases de Datos</p>
                     <div class="badge-container">
                         <span class="badge text-bg-primary">HTML</span>
                         <span class="badge text-bg-primary">CSS</span>
                         <span class="badge text-bg-primary">Bootstrap</span>
                         <span class="badge text-bg-primary">Node Js</span>
+                        <span class="badge text-bg-primary">SQLite</span>
+                        <span class="badge text-bg-primary">MySQL Workbench</span>
+                        <span class="badge text-bg-primary">MongoDB</span>
                     </div>
                 </div>
 
@@ -128,8 +177,6 @@
                         <span class="badge text-bg-primary">Microcontroladores</span>
                         <span class="badge text-bg-primary">Sistemas Hidráulica</span>
                         <span class="badge text-bg-primary">Sistemas Neumática</span>
-                        <span class="badge text-bg-primary">Mantenimiento</span>
-                        <span class="badge text-bg-primary">Automatización de Procesos Industriales</span>
                     </div>
                 </div>
             </div>
@@ -137,17 +184,27 @@
     </section>
 
     <!-- Proyectos -->
+
+    <!-- d-flex : Esta es una clase de Bootstrap que se utiliza para crear un contenedor flexible. -->
+    <!-- flex-column : Esta es una clase de Bootstrap que se utiliza para alinear verticalmente los elementos de la sección. -->
     <section id="Proyectos" class="recent-projects clear-section d-flex flex-column">
+
         <h2 class="title">MIS PROYECTOS</h2>
 
         <!--Galeria de Proyectos-->
+        <!-- container :  Esta es una clase de Bootstrap que se utiliza para un contenedor de ancho fijo que se centra automáticamente en la página. -->
+        <!-- text-center : Esta es una clase de Bootstrap que se utiliza para alinear el texto en el centro. -->
         <div class="container text-center container-projects">
 
+            <!-- row : Esta es una clase de Bootstrap que se utiliza para crear una fila. -->
             <div class="row">
 
                 <h2>Desarrollo Web</h2>
                 
                 <!-- 1 -->
+                <!-- col-12 : Esta es una clase de Bootstrap que se utiliza para crear una columna que ocupa 12 espacios en una fila. -->
+                <!-- col-md-6 : Esta es una clase de Bootstrap que se utiliza para crear una columna que ocupa 6 espacios en una fila en pantallas medianas. -->
+                <!-- col-lg-4 : Esta es una clase de Bootstrap que se utiliza para crear una columna que ocupa 4 espacios en una fila en pantallas grandes. -->
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="projects">
                         <img src="images/HTML_CSS_JavaScript_Calculator.png" alt="Proyecto 1">
@@ -155,9 +212,13 @@
                             <p>Calculadora Basica</p>
                             <div class="container-icons">
                                 <a href="https://github.com/SiegBoss/HTML_CSS_JavaScript_Calculator" target="_blank" rel="noopener noreferrer">
+
+                                    <!-- bi bi-github : Este es un componente de Bootstrap que crea un icono de GitHub. -->
                                     <i class="bi bi-github"></i>
                                 </a>
                                 <a href="https://siegboss.github.io/HTML_CSS_JavaScript_Calculator/" target="_blank" rel="noopener noreferrer">
+
+                                    <!-- bi bi-laptop : Este es un componente de Bootstrap que crea un icono de laptop. -->
                                     <i class="bi bi-laptop"></i>
                                 </a>
                             </div>
@@ -224,7 +285,7 @@
                     <div class="projects">
                         <img src="images/HTML_CSS_JavaScript_MongoDB.png" alt="Proyecto 1">
                             <div class="overlay">
-                            <p>Servidor en Node JS y MongoDB</p>
+                            <p>Bases de Datos MongoDB y Node JS </p>
                             <div class="container-icons">
                                 <a href="https://github.com/SiegBoss/HTML_CSS_JavaScript_MongoDB" target="_blank" rel="noopener noreferrer">
                                     <i class="bi bi-github"></i>
@@ -237,15 +298,12 @@
                 <!-- 6 -->
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="projects">
-                        <img src="images/HTML_and_CSS_Flowers.png" alt="Proyecto 1">
+                        <img src="images/HTML_CSS_JavaScript_Login_and_Register.png" alt="Proyecto 1">
                             <div class="overlay">
-                            <p>Flores</p>
+                            <p>Inciar Sesión, Registrarse y Node JS</p>
                             <div class="container-icons">
-                                <a href="https://github.com/SiegBoss/HTML_and_CSS_Flowers" target="_blank" rel="noopener noreferrer">
+                                <a href="https://github.com/SiegBoss/HTML_CSS_JavaScript_Login_and_Register" target="_blank" rel="noopener noreferrer">
                                     <i class="bi bi-github"></i>
-                                </a>
-                                <a href="https://siegboss.github.io/HTML_and_CSS_Flowers/" target="_blank" rel="noopener noreferrer">
-                                    <i class="bi bi-laptop"></i>
                                 </a>
                             </div>
                         </div>
@@ -396,15 +454,46 @@
 
                 <!-- 1 -->
                 <div class=" col-12 col-md-6 col-lg-4">
-                    <div class="gallery">
-                        <img src="images/Sorting_Machine.JPG" alt="Imagen 1" onclick="openModal('images/Sorting_Machine.JPG')">
+                    <div class="projects">
+                        <img src="images/Sorting_Machine.JPG" alt="Proyecto 6">
+                        <div class="overlay">
+                            <p>Cinta Transportadora SolidWorks </p>
+                            <div class="container-icons">.
+                                <div>
+                                    <i class="bi bi-image" onclick="openModal('images/Sorting_Machine.JPG')" ></i>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
                 <!-- 2 -->
                 <div class=" col-12 col-md-6 col-lg-4">
-                    <div class="gallery">
-                        <img src="images/Marmita.JPG" alt="Imagen 1" onclick="openModal('images/Marmita.JPG')">
+                    <div class="projects">
+                        <img src="images/Marmita.JPG" alt="Proyecto 6">
+                        <div class="overlay">
+                            <p>Marmita SolidWorks</p>
+                            <div class="container-icons">
+                                <div>
+                                    <i class="bi bi-image" onclick="openModal('images/Marmita.JPG')" ></i>
+                                </div>   
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="projects">
+                        <img src="images/LabVIEW.png" alt="Proyecto 1">
+                            <div class="overlay">
+                            <p>Sistema SCADA con LabVIEW</p>
+                            <div class="container-icons">
+                                <a href="pages/labview.html" target="_blank" rel="noopener noreferrer">
+                                    <i class="bi bi-images"></i>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -414,41 +503,59 @@
                     <img src="" id="modalImage" alt="Imágen Ampliada">
                 </div>
             
-                <!-- 3 -->
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="gallery">
-                        <a href="pages/labview.html" target="_blank" rel="noopener noreferrer">
-                            <img src="images/LabVIEW.png" alt="Imagen 1">
-                        </a>
-                    </div>
-                </div>
-
                 <!-- Mas Proyectos -->
                 <a href="https://github.com/SiegBoss?tab=repositories" target="_blank" rel="noopener noreferrer">
+
+                    <!-- btn : Esta es una clase de Bootstrap que se utiliza para crear un botón. -->
+                    <!-- btn-info : Esta es una clase de Bootstrap que se utiliza para crear un botón de color azul. -->
                     <button type="button" class="btn btn-info">Ver mas Proyectos
+
+                        <!-- bi bi-arrow-right-circle-fill : Este es un componente de Bootstrap que crea un icono de flecha. -->
                         <i class="bi bi-arrow-right-circle-fill"></i>
                     </button>
                 </a>
+
             </div>
     </section>
 
     <!--Seccion Contacto-->
     <section id="Contacto" class="contact dark-section">
+
+        <!-- container :  Esta es una clase de Bootstrap que se utiliza para un contenedor de ancho fijo que se centra automáticamente en la página. -->
         <div class="container">
+
+            <!-- container :  Esta es una clase de Bootstrap que se utiliza para un contenedor de ancho fijo que se centra automáticamente en la página. -->
+            <!-- text-center : Esta es una clase de Bootstrap que se utiliza para alinear el texto en el centro. -->
+            <!-- d-flex : Esta es una clase de Bootstrap que se utiliza para crear un contenedor flexible. -->
+            <!-- flex-column : Esta es una clase de Bootstrap que se utiliza para alinear verticalmente los elementos de la sección. -->
+            <!-- justify-content-evenly : Esta es una clase de Bootstrap que se utiliza para alinear los elementos de la sección de manera uniforme. -->
             <div class="container text-center d-flex rectangle justify-content-evenly">
+
+                <!-- row : Esta es una clase de Bootstrap que se utiliza para crear una fila. -->
                 <div class="row">
+
+                    <!-- col-12 : Esta es una clase de Bootstrap que se utiliza para crear una columna que ocupa 12 espacios en una fila. -->
+                    <!-- col-md-4 : Esta es una clase de Bootstrap que se utiliza para crear una columna que ocupa 4 espacios en una fila en pantallas medianas. -->
                     <div class="col-12 col-md-4 section-title">
                         <p class="title"> Hablemos </p>
                     </div>
+
+                    <!-- col-12 : Esta es una clase de Bootstrap que se utiliza para crear una columna que ocupa 12 espacios en una fila. -->
+                    <!-- col-md-4 : Esta es una clase de Bootstrap que se utiliza para crear una columna que ocupa 4 espacios en una fila en pantallas medianas. -->
                     <div class="col-12 col-md-4 description">
                         ¡Hola! Gracias por visitar mi portafolio.
                         Si te gustó mi trabajo y crees que puedo ser el candidato ideal para tu proyecto,
                         no dudes en contactarme.
                     </div>
+
+                    <!-- col-12 : Esta es una clase de Bootstrap que se utiliza para crear una columna que ocupa 12 espacios en una fila. -->
+                    <!-- col-md-4 : Esta es una clase de Bootstrap que se utiliza para crear una columna que ocupa 4 espacios en una fila en pantallas medianas. -->
                     <div class="col-12 col-md-4">
                         <a href="mailto:reyesawf@gmail.com">
                             <button type="button">
                                 Enviar Correo
+                                
+                                <!-- bi bi-envelope-check-fill : Este es un componente de Bootstrap que crea un icono de sobre. -->
                                 <i class="bi bi-envelope-check-fill"></i>
                             </button>
                         </a>
@@ -459,29 +566,55 @@
     </section>
 
     <!--Pie de Pagina-->
+
+    <!-- d-flex : Esta es una clase de Bootstrap que se utiliza para crear un contenedor flexible. -->
+    <!-- flex-column : Esta es una clase de Bootstrap que se utiliza para alinear verticalmente los elementos de la sección. -->
+    <!-- align-items-center : Esta es una clase de Bootstrap que se utiliza para alinear verticalmente los elementos de la sección. -->
+    <!-- justify-content-center : Esta es una clase de Bootstrap que se utiliza para alinear los elementos de la sección en el centro. -->
     <footer class="dark-section d-flex flex-column align-items-center justify-content-center">
+
         <img class="footer-icon" src="images/round_willy_logo.png" alt="Logo de la Pagina">
+
+        <!-- text-center : Esta es una clase de Bootstrap que se utiliza para alinear el texto en el centro. -->
         <p class="footer-text text-center">Tu versión de mañana debería poder vencer a tú versión de hoy</p>
+
+        <!-- d-flex : Esta es una clase de Bootstrap que se utiliza para crear un contenedor flexible. -->
+        <!-- flex-wrap : Esta es una clase de Bootstrap que se utiliza para envolver los elementos de la sección. -->
+        <!-- align-items-center : Esta es una clase de Bootstrap que se utiliza para alinear verticalmente los elementos de la sección. -->
+        <!-- justify-content-center : Esta es una clase de Bootstrap que se utiliza para alinear los elementos de la sección en el centro. -->
         <div class="social-media-icons d-flex flex-wrap align-items-center justify-content-center">
+
             <a href="https://twitter.com/SiegBoss" target="_blank" rel="noopener noreferrer">
+
+                <!-- bi bi-twitter-x : Este es un componente de Bootstrap que crea un icono de Twitter. -->
                 <i class="bi bi-twitter-x"></i>
             </a>
             <a href="https://github.com/SiegBoss" target="_blank" rel="noopener noreferrer">
+
+                <!-- bi bi-github : Este es un componente de Bootstrap que crea un icono de GitHub. -->
                 <i class="bi bi-github"></i>
             </a>
             <a href="https://www.instagram.com/siegboss_xp/" target="_blank" rel="noopener noreferrer">
+
+                <!-- bi bi-instagram : Este es un componente de Bootstrap que crea un icono de Instagram. -->
                 <i class="bi bi-instagram"></i>
             </a>
             <a href="https://www.tiktok.com/@siegboss" target="_blank" rel="noopener noreferrer">
+
+                <!-- bi bi-tiktok : Este es un componente de Bootstrap que crea un icono de TikTok. -->
                 <i class="bi bi-tiktok"></i>
             </a>
         </div>
+
         <div class="Copyright">
             creado por SiegBoss &#169; 2023
         </div>
+
     </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="scripts/index.js"></script>
+    
 </body>
 
 </html>
